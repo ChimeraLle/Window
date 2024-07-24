@@ -1,0 +1,77 @@
+local Window = nil
+local ScriptName = ""
+
+local CoreGui = game:GetService("CoreGui")
+
+local function CreateWindow()
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local Window = Instance.new("Frame")
+	local UIPadding = Instance.new("UIPadding")
+	local Tabs = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local UICorner = Instance.new("UICorner")
+	local UICorner_2 = Instance.new("UICorner")
+	local Pages = Instance.new("Frame")
+	local UICorner_3 = Instance.new("UICorner")
+	local UIPadding_2 = Instance.new("UIPadding")
+
+	ScreenGui.Name = ScriptName
+	ScreenGui.Parent = CoreGui
+
+	Window.Name = "Window"
+	Window.Parent = ScreenGui
+	Window.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	Window.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Window.BorderSizePixel = 0
+	Window.Position = UDim2.new(0.200000003, 0, 0.200000003, 0)
+	Window.Size = UDim2.new(0.600000024, 0, 0.600000024, 0)
+
+	UIPadding.Parent = Window
+	UIPadding.PaddingBottom = UDim.new(0, 10)
+	UIPadding.PaddingLeft = UDim.new(0, 10)
+	UIPadding.PaddingRight = UDim.new(0, 10)
+	UIPadding.PaddingTop = UDim.new(0, 10)
+
+	Tabs.Name = "Tabs"
+	Tabs.Parent = Window
+	Tabs.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Tabs.BorderSizePixel = 0
+	Tabs.Size = UDim2.new(0.100000001, 0, 1, 0)
+
+	UIListLayout.Parent = Tabs
+	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+	UIListLayout.Padding = UDim.new(0.0299999993, 0)
+
+	UICorner.Parent = Tabs
+
+	UICorner_2.Parent = Window
+
+	Pages.Name = "Pages"
+	Pages.Parent = Window
+	Pages.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	Pages.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Pages.BorderSizePixel = 0
+	Pages.Position = UDim2.new(0.125, 0, 0, 0)
+	Pages.Size = UDim2.new(0.875, 0, 1, 0)
+
+	UICorner_3.Parent = Pages
+
+	UIPadding_2.Parent = Pages
+	UIPadding_2.PaddingBottom = UDim.new(0, 10)
+	UIPadding_2.PaddingLeft = UDim.new(0, 10)
+	UIPadding_2.PaddingRight = UDim.new(0, 10)
+	UIPadding_2.PaddingTop = UDim.new(0, 10)
+	
+end
+
+local function CreateTab()
+
+end
+
+local function CreateButton()
+
+end
