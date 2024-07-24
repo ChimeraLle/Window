@@ -3,7 +3,7 @@ local ScriptName = ""
 
 local CoreGui = game:GetService("CoreGui")
 
-local CreateWindow = function()
+local CreateWindow = function(WindowTitle)
 	
 	local ScreenGui = Instance.new("ScreenGui")
 	local Window = Instance.new("Frame")
